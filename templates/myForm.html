@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" dir = "ltr">
+    
+    <head>
+        <script>console.warn("Server Side Rendering => render-from ==> \n frontend");</script>
+        <style type="text/css">@media print{.form-section{display:inline!important}.form-pagebreak{display:none!important}.form-section-closed{height:auto!important}.page-section{position:initial!important}}</style>
+        <link type="text/css" rel="stylesheet" href="https://cdn01.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?themeRevisionID=5f30e2a790832f3e96009402"/>
+        <style type="text/css" id="form-designer-style">
+        /* Injected CSS Code */  
+        <title>HDP</title>
+        
+        <style>
+            .align-center{
+                text-align: center;
+            }
+            label{
+                width: 200px;
+                display: inline-block;
+            }
+            
+            .form-submit-button{
+                cursor: pointer;
+                border-radius:.5em;
+
+                padding:8px 18px;
+
+                color: #ffffff;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 12px;
+                font-weight: bold;
+                text-shadow:-1px -1px 0px #b23d35;
+
+                border:1px solid #d83526;
+
+            
+                box-shadow:inset 0px 1px 0px 0px #f7c4c0;
+            }
+
+            .form-submit-button-simple_rose:hover{
+                border:1px solid #d83526;
+                background: #ee776d;
+            }
+
+            .form-submit-button-simple_rose:active{
+                border:1px solid #d83526;
+                position: relative;
+                top: 1px;
+                background: #ee776d;                   
+                }
+            
+    </style>
+    </head>
+
+    
+    <form class="" action="/find" method="post">
+        <div role="main" class="form-all">
+            <style>
+              .form-all:before { background: none;}
+            </style>
+        <ul class="form-section page-section">
+        <div class="form-header-group  header-medium">
+            <div class="header-text httal htvam">
+              <h1 id="header_14" class="form-header" data-component="header">
+                Heart Disease Prediction
+              </h1>
+            </div>
+          </div>
+    
+    <li class="form-line">
+    <label class="form-label-left " id="label_103" for="input_103"> Enter Age </label>
+    <div id="cid_103" class="form-input" data-layout="half">
+        <span class="form-sub-label-container" style="vertical-align:top">
+            <input type="number" id="age" name="age" min = "0" data-type="input-number" class=" form-textbox" data-defaultvalue="" style="width:310px" size="310" value="" placeholder="e.g., 23" data-component="number"  step="any" />
+        </span>
+    </div>
+    </li>
+    <br>
+
+    <li class="form-line">
+        
+        <label class="  form-label-left " id="label_104" for="input_104"> Sex </label>
+        <div id="cid_104" class="form-input" data-layout="half">
+            <span class="form-sub-label-container" style="vertical-align:top">
+            <select class="form-dropdown" id="sex" name="sex" style="width:310px"  data-component="dropdown">
+                <option value=""> Please Select </option>
+                <option value="Male"> Male </option>
+                <option value="Female"> Female </option>
+            </select>
+            </span>   
+        </div>
+    </li>     
+        <br>
+    
+        <li class="form-line">
+        
+        <label class="form-label-left " id="label_105" for="input_105"> Chest Pain Type </label>
+        <div id="cid_105" class="form-input" data-layout="half">
+          <select class="form-dropdown" id = "chest_pain_type" name = "chest_pain_type" style="width:310px" data-component="dropdown">
+            <option value=""> Please Select </option>
+            <option value="TA"> TA </option>
+            <option value="ASY"> ASY </option>
+            <option value="ATA"> ATA </option>
+            <option value="NAP"> NAP </option>
+          </select>
+        </div>
+        
+        </li>        
+        <br>
+
+        <li class="form-line">
+    
+        <label class="  form-label-left " id="label_103" for="input_103"> Resting Blood Pressure </label>
+        <div id="cid_103" class="form-input" data-layout="half">
+            <span class="form-sub-label-container" style="vertical-align:top">
+                <input type="number" min = "0" id = "resting_bp" name = "resting_bp" data-type="input-number" class=" form-textbox" data-defaultvalue="" style="width:310px" size="310" value="" placeholder="e.g., 23" data-component="number"  step="any" />
+            </span>
+        </div>
+        </li>
+        <br>
+
+        <li class="form-line">
+    
+        <label class="  form-label-left " id="label_103" for="input_103"> Blood Cholesterol </label>
+        <div id="cid_103" class="form-input" data-layout="half">
+            <span class="form-sub-label-container" style="vertical-align:top">
+                <input type="number" min = "0" id = "cholesterol" name = "cholesterol" data-type="input-number" class=" form-textbox" data-defaultvalue="" style="width:310px" size="310" value="" placeholder="e.g., 23" data-component="number"  step="any" />
+            </span>
+        </div>
+        </li>
+        <br>
+    
+        <li class="form-line">
+    
+          <label class="  form-label-left " id="label_109" for="input_109"> Fasting Blood Sugar </label>
+          <div id="cid_109" class="form-input" data-layout="half">
+            <select class="form-dropdown" id = "fasting_bs" name ="fasting_bs" style="width:310px" data-component="dropdown">
+              <option value=""> Please Select </option>
+              <option value="0"> 0 </option>
+              <option value="1"> 1 </option>
+            </select>
+          </div>
+          </li>
+        <br>
+
+        <li class="form-line">
+    
+        <label class="  form-label-left " id="label_109" for="input_109"> Resting ECG </label>
+        <div id="cid_109" class="form-input" data-layout="half">
+          <select class="form-dropdown" id = "resting_ecg" name ="resting_ecg" style="width:310px" data-component="dropdown">
+            <option value=""> Please Select </option>
+            <option value="Normal"> Normal </option>
+            <option value="ST"> ST </option>
+            <option value="LVH"> LVH </option>
+          </select>
+        </div>
+        </li>
+        <br>
+        
+        <li class="form-line">
+    
+        <label class="  form-label-left " id="label_103" for="input_103"> Max Heart Rate </label>
+        <div id="cid_103" class="form-input" data-layout="half">
+            <span class="form-sub-label-container" style="vertical-align:top">
+                <input type="number" min = "0" id = "max_hr" name = "max_hr" data-type="input-number" class=" form-textbox" data-defaultvalue="" style="width:310px" size="310" value="" placeholder="e.g., 23" data-component="number"  step="any" />
+            </span>
+        </div>
+    
+        </li>
+        <br>
+
+        
+        <li class="form-line">
+        <label class="  form-label-left " id="label_111" for="input_111"> Exercise Angina </label>
+        <div id="cid_111" class="form-input" data-layout="half">
+          <select class="form-dropdown" id = "exercise_angina" name = "exercise_angina" style="width:310px" data-component="dropdown">
+            <option value=""> Please Select </option>
+            <option value="Yes"> Yes </option>
+            <option value="No"> No </option>
+          </select>
+        </div>
+        </li>
+        <br>
+
+        <li class="form-line">
+    
+        <label class="  form-label-left " id="label_1000" for="input_103"> Old Peak </label>
+        <div id="cid_103" class="form-input" data-layout="half">
+            <span class="form-sub-label-container" style="vertical-align:top">
+                <input type="number" min = "0" id = "old_peak" name = "old_peak" data-type="input-number" class=" form-textbox" data-defaultvalue="" style="width:310px" size="310" value="" placeholder="e.g., 23" data-component="number"  step="any" />
+            </span>
+        </div>
+        </li>
+        <br>
+
+        
+        <li class="form-line">
+          <label class="  form-label-left " id="label_111" for="input_111"> ST Slope </label>
+          <div id="cid_111" class="form-input" data-layout="half">
+            <select class="form-dropdown" id = "st_slope" name = "st_slope" style="width:310px" data-component="dropdown">
+              <option value=""> Please Select </option>
+              <option value="Up"> Up </option>
+              <option value="Down"> Down </option>
+              <option value="Flat"> Flat </option>
+            </select>
+          </div>
+          </li>
+          <br>
+
+        <li class="form-line" >
+            <div id="cid_2" class="form-input-wide" data-layout="full">
+              <div data-align="center" class="form-buttons-wrapper form-buttons-center   jsTest-button-wrapperField">
+                <button id="input_2" type="submit" class="form-submit-button form-submit-button-simple_rose submit-button jf-form-buttons jsTest-submitField" data-component="button" data-content="">
+                  Submit
+                </button>
+              </div>
+            </div>
+          </li>
+    </div>
+    </ul>    
+    </form>
+
+    </html>
